@@ -18,5 +18,7 @@ echo $pets >> TeamOrangeAnswer.list
 echo $siblings >> TeamOrangeAnswer.list
 echo $planets >> TeamOrangeAnswer.list
 echo $icecream >> TeamOrangeAnswer.list
+date >> TeamOrangeAnswer.list
 paste -d, -s TeamOrangeAnswer.list > TeamOrangeAnswer$name.csv
+
 rm TeamOrangeAnswer.list
