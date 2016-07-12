@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "What is your last name?"
+read name
 echo "How old are you?"
 read age
 echo "How many pets do you have?"
@@ -16,5 +18,5 @@ echo $pets >> TeamOrangeAnswer.list
 echo $siblings >> TeamOrangeAnswer.list
 echo $planets >> TeamOrangeAnswer.list
 echo $icecream >> TeamOrangeAnswer.list
-paste -d, -s TeamOrangeAnswer.list > TeamOrangeAnswer.csv
+paste -d, -s TeamOrangeAnswer.list > TeamOrangeAnswer$name.csv
 rm TeamOrangeAnswer.list
